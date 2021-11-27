@@ -15,3 +15,5 @@ const love_test = [
   "You auto-complete me.",
   "You have nice syntax.",
 ];
+
+export default love_test;
