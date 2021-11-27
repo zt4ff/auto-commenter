@@ -1,0 +1,10 @@
+name: "Auto Comment Love"
+description: "Send love messages as comments"
+inputs:
+  type:
+    description: "the type of comment to be sent"
+    required: true
+    default: "love_text"
+runs:
+  using: "node12"
+  main: "index.js"
