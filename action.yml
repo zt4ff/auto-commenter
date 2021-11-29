@@ -1,4 +1,4 @@
-name: "Auto Commentter"
+name: "Auto Commenter"
 description: "Send love messages, memes or custom message as comments"
 inputs:
   token:
