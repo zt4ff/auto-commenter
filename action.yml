@@ -1,5 +1,5 @@
-name: "Auto Comment Love"
-description: "Send love messages as comments"
+name: "Auto Commentter"
+description: "Send love messages, memes or custom message as comments"
 inputs:
   token:
     description: The Github authetication token

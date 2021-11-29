@@ -16,4 +16,4 @@ const love_test = [
   "You have nice syntax.",
 ];
 
-export default love_test;
+module.exports = love_test;

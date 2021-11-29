@@ -11,16 +11,17 @@ function getSha() {
   }
 }
 
-function getBody (actionType) {
-    switch (actionType) {
-        case "love_text":
-            const love_test = require("./love_text")
-            break;
-    
-        default:
-            break;
-    }
-}
+const getLoveTest = () => {
+  const love_test = require("./love_text");
+  return love_test[Math.floor(Math.random() * love_test.length)];
+};
+
+const getMemesLink = () => {
+  const memes_link = require("./memes_link");
+  return `![memes](${
+    memes_link[Math.floor(Math.random() * memes_link.length)]
+  })`;
+};
 
 async function run() {
   try {
@@ -39,15 +40,29 @@ async function run() {
 
     const octokit = github.getOctokit(inputs.token);
 
-    const body = getBody(inputs.actionType)
+    function getBody(actionType) {
+      switch (actionType) {
+        case "love_texts":
+          return getLoveTest();
+        case "memes":
+          return getMemesLink();
+        case "custom":
+          return core.getInput("body");
+        default:
+          return getLoveTest();
+      }
+    }
 
     await octokit.rest.repos.createCommitComment({
       owner: owner,
       repo: repo,
       commit_sha: sha,
-      body: 
+      body: getBody(inputs.actionType),
     });
   } catch (err) {
+    core.debug(inspect(err));
     core.setFailed(err.message);
   }
 }
+
+run();
