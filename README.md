@@ -4,6 +4,12 @@
 Love Texts:
 ![love_test](/readme_resources/love_texts.png)
 
+Memes (gifs from GIPHY.com)
+![gifs](/readme_resources/meme.png)
+
+Custom Messages
+![custom-messages](/readme_resources/custom.png)
+
 ## Getting Started
 
 ### Installation
