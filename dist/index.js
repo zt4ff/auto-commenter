@@ -1,52 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 2637:
-/***/ ((module) => {
-
-const love_test = [
-  "You are the CSS to my HTML.",
-  "[me != me]. [me += you].",
-  "Are you a computer keyboard? Because you're my type.",
-  "Are you an exception? Let me catch you.",
-  "Baby you must be Google Glasses, because you augment my reality",
-  "Could I have your I.P.?",
-  "Here's my number: 0011 0011 1011 0001 0010 1000 0101",
-  "I am a Boolean method whose love will always return true.",
-  "I googled your name earlier... I clicked on 'I'm Feeling Lucky.'",
-  "I think you could be an integral part of my project life cycle.",
-  "I'd switch to emacs for you.",
-  "You are a field in my class. You will always be protected.",
-  "You are my methods. I am nothing without you.",
-  "You auto-complete me.",
-  "You have nice syntax.",
-];
-
-module.exports = love_test;
-
-
-/***/ }),
-
-/***/ 8185:
-/***/ ((module) => {
-
-// git memes from giphy.com
-const memes_link = [
-  "https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif", //salt bae meme
-  "https://media.giphy.com/media/koUtwnvA3TY7C/giphy.gif",
-  "https://media.giphy.com/media/XIqCQx02E1U9W/giphy.gif",
-  "https://media.giphy.com/media/a5viI92PAF89q/giphy.gif",
-  "https://media.giphy.com/media/l41lVsYDBC0UVQJCE/giphy.gif",
-  "https://media.giphy.com/media/u7hjTwuewz3Gw/giphy.gif",
-  "https://media.giphy.com/media/7yDthHaq2haXS/giphy.gif",
-  "https://media.giphy.com/media/b9aScKLxdv0Y0/giphy.gif",
-];
-
-module.exports = memes_link;
-
-
-/***/ }),
-
 /***/ 726:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
@@ -8319,6 +8273,52 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
+/***/ 4952:
+/***/ ((module) => {
+
+const love_test = [
+  "You are the CSS to my HTML.",
+  "[me != me]. [me += you].",
+  "Are you a computer keyboard? Because you're my type.",
+  "Are you an exception? Let me catch you.",
+  "Baby you must be Google Glasses, because you augment my reality",
+  "Could I have your I.P.?",
+  "Here's my number: 0011 0011 1011 0001 0010 1000 0101",
+  "I am a Boolean method whose love will always return true.",
+  "I googled your name earlier... I clicked on 'I'm Feeling Lucky.'",
+  "I think you could be an integral part of my project life cycle.",
+  "I'd switch to emacs for you.",
+  "You are a field in my class. You will always be protected.",
+  "You are my methods. I am nothing without you.",
+  "You auto-complete me.",
+  "You have nice syntax.",
+];
+
+module.exports = love_test;
+
+
+/***/ }),
+
+/***/ 4557:
+/***/ ((module) => {
+
+// git memes from giphy.com
+const memes_link = [
+  "https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif", //salt bae meme
+  "https://media.giphy.com/media/koUtwnvA3TY7C/giphy.gif",
+  "https://media.giphy.com/media/XIqCQx02E1U9W/giphy.gif",
+  "https://media.giphy.com/media/a5viI92PAF89q/giphy.gif",
+  "https://media.giphy.com/media/l41lVsYDBC0UVQJCE/giphy.gif",
+  "https://media.giphy.com/media/u7hjTwuewz3Gw/giphy.gif",
+  "https://media.giphy.com/media/7yDthHaq2haXS/giphy.gif",
+  "https://media.giphy.com/media/b9aScKLxdv0Y0/giphy.gif",
+];
+
+module.exports = memes_link;
+
+
+/***/ }),
+
 /***/ 6619:
 /***/ ((module) => {
 
@@ -8502,12 +8502,14 @@ function getSha() {
 }
 
 const getLoveTest = () => {
-  const love_test = __nccwpck_require__(2637);
-  return love_test[Math.floor(Math.random() * love_test.length)];
+  const love_test = __nccwpck_require__(4952);
+  return `${
+    love_test[Math.floor(Math.random() * love_test.length)]
+  } :heart: :heart: `;
 };
 
 const getMemesLink = () => {
-  const memes_link = __nccwpck_require__(8185);
+  const memes_link = __nccwpck_require__(4557);
   return `![memes](${
     memes_link[Math.floor(Math.random() * memes_link.length)]
   })`;

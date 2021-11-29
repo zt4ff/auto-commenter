@@ -13,7 +13,9 @@ function getSha() {
 
 const getLoveTest = () => {
   const love_test = require("./love_text");
-  return love_test[Math.floor(Math.random() * love_test.length)];
+  return `${
+    love_test[Math.floor(Math.random() * love_test.length)]
+  } :heart: :heart: `;
 };
 
 const getMemesLink = () => {
