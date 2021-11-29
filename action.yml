@@ -12,7 +12,7 @@ inputs:
   type:
     description: "The type of comment to be sent"
     required: true
-    default: "love_text"
+    default: "love_texts"
 runs:
   using: "node12"
   main: "dist/index.js"
