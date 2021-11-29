@@ -4,7 +4,7 @@
 Love Texts:
 ![love_test](/readme_resources/love_texts.png)
 
-Memes (gifs from GIPHY.com)
+Memes
 ![gifs](/readme_resources/meme.png)
 
 Custom Messages
