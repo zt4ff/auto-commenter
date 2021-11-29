@@ -4,10 +4,10 @@
 Love Texts:
 ![love_test](/readme_resources/love_texts.png)
 
-Memes
+Memes:
 ![gifs](/readme_resources/meme.png)
 
-Custom Messages
+Custom Messages:
 ![custom-messages](/readme_resources/custom.png)
 
 ## Getting Started
