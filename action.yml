@@ -13,6 +13,8 @@ inputs:
     description: "The type of comment to be sent"
     required: true
     default: "love_texts"
+  body:
+    description: "The custom message if type is 'custom'"
 runs:
   using: "node12"
   main: "dist/index.js"

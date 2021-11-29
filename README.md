@@ -35,4 +35,18 @@ jobs:
 ### Usage
 
 When a commit is pushed to the remote repository, this actions create a comment on each commit sha or hash.
-The above installation code will auto commit a love test
+The above installation code will auto comment a love test
+
+## Action inputs
+
+| Name         | Description                                                                                                                                          | Default                                                                         |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| `type`       | (**required**) The type of comment the action should give. Includes `love_texts`, `memes`, or `custom`                                               | `love_texts`                                                                    |
+| `token`      | (**optional**) `GITHUB_TOKEN` or a `repo` scoped [PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). | `GITHUB_TOKEN`                                                                  |
+| `repository` | (**optional**) The full name of the target repository.                                                                                               | `github.repository` (current repository)                                        |
+| `sha`        | (**optional**) The commit SHA.                                                                                                                       | `github.sha` OR, for `pull_request` events `github.event.pull_request.head.sha` |
+| `body`       | (**optional**) The contents of the comment if `type` is `custom`.                                                                                    |                                                                                 |
+
+## License
+
+[MIT](License)
