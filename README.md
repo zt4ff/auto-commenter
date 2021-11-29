@@ -24,18 +24,77 @@ on:
   push:
 
 jobs:
-  auto-comment-memes:
+  auto-comment-text:
     runs-on: ubuntu-latest
     steps:
       - uses: zt4ff/auto-commmenter@v2
         with:
-          type: love_tests
+          type: love_texts
 ```
 
 ### Usage
 
 When a commit is pushed to the remote repository, this actions create a comment on each commit sha or hash.
-The above installation code will auto comment a love test
+The above installation code will auto comment a love test.
+Currently, they are three type of comment actions: `love_texts`, `memes` and `custom`
+
+### Examples
+
+#### love_texts
+
+```yaml
+name: Auto Commenter
+
+on:
+  push:
+
+jobs:
+  auto-comment-text:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: zt4ff/auto-commmenter@v2
+        with:
+          type: love_texts
+```
+
+#### memes
+
+```yaml
+name: Auto Commenter
+
+on:
+  push:
+
+jobs:
+  auto-comment-memes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: zt4ff/auto-commmenter@v2
+        with:
+          type: memes
+```
+
+#### custom messages
+
+```yaml
+name: Auto Commenter
+
+on:
+  push:
+
+jobs:
+  auto--custom-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: zt4ff/auto-commmenter@v2
+        with:
+          type: custom
+          body: |
+            This is custom message
+            It's multiline and it also support github markdown.
+            - list item 1
+            - llist item 2
+```
 
 ## Action inputs
 
